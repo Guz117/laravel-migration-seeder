@@ -10,7 +10,7 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $train = Train::where('Departur_time', '2022-02-18 14:40:00')->get();
+        $train = Train::where('Departures_time', '16:10:00')->get();
         dd($train);
         return view("home", $train);
     }

@@ -22,9 +22,9 @@ class CreateTrainsTable extends Migration
 
             $table->string('Arival_station', 150);
 
-            $table->dateTime('Departur_time');
+            $table->time('Departures_time');
 
-            $table->dateTime('Arival_time');
+            $table->time('Arrivals_time');
 
             $table->string('Code_train', 10);
 
