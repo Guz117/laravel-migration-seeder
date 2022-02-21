@@ -11,6 +11,7 @@ class TrainController extends Controller
 {
     public function index()
     {
+        // $trains = Train::where('arrivals_date', '>=', Carbon::today())->get();
         $trains = Train::paginate(10);
         $data = ['trains' => $trains];
         return view("home", $data);
