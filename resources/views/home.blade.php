@@ -39,7 +39,10 @@
                 @endif  
             </p>
         </div>
-    @endforeach
+        @endforeach
+        <div class="number">
+            {{ $trains->links() }}
+        </div>
 </div>
 
 @endsection

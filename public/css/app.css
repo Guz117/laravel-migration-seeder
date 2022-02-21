@@ -25,6 +25,10 @@
   text-transform: uppercase;
 }
 
+.pagimnation {
+  display: flex;
+}
+
 .index {
   display: flex;
 }
