@@ -24,7 +24,7 @@
             <p>{{ $train->arrivals_time }}</p>
             <p>{{ date_format(date_create($train->departures_date),'d M Y') }}</p>
             <p>{{ date_format(date_create($train->arrivals_date),'d M Y') }}</p>
-            <p>{{ $train->code_train }}</p>
+            <a href="{{ route('show', $train) }}"><p>{{ $train->code_train }}</p></a>
             <p>{{ $train->number_carriages }}</p>
             <p>
                 @if ($train->on_time == true)

@@ -15,4 +15,9 @@ class TrainController extends Controller
         $data = ['trains' => $trains];
         return view("home", $data);
     }
+
+    public function show(Train $train) //findOrFail
+    {
+        return view('show', compact('train'));
+    }
 }
