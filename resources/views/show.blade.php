@@ -37,6 +37,7 @@
                 <i class="fa-solid fa-x"></i>
             @endif  
         </p>
+        <a href="{{ route('index') }}"><button>home</button></a>
     </div>
 </div>
 @endsection
